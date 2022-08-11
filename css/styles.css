@@ -195,6 +195,35 @@ ul {
     /* margin-right: auto; */
 }
 
+.contact-item::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+}
+
+.icon-mail::before {
+    background-image: url(../img/envelope\ \(hover\).svg);
+    color: #757575;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-mobile::before {
+    background-image: url(../img/smartphone.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .icon-mail:hover, .icon-mail:focus {
+    color: var(--accent-color);
+}
+.icon-mobile:hover, .icon-mobile:focus {
+    color: var(--accent-color);
+} */
+
 .mail, .tel {
     color: var(--contact);
     font-weight: 500;
@@ -217,10 +246,17 @@ margin-right: 50px;
 /* Hero */
 
 .hero {
+    /* outline: 2px solid var(--outline); */
     background-color: var(--hero-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    /* outline: 2px solid var(--outline); */
+    /* background-image: url(../img/ImgOverlay.jpg),
+    linear-gradient( to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -271,7 +307,37 @@ margin-right: 50px;
 
 .benefits-item {
     width: 270px;
+
 }
+
+.benefits-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    outline: 1px solid red;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-deteil::before {
+    background-image: url(../img/Vector.svg);
+}
+.icon-clock::before {
+    background-image: url(../img/clock\ 1.svg);
+}
+.icon-planning::before {
+    background-image: url(../img/diagram\ 1.svg);
+}
+.icon-technology::before {
+    background-image: url(../img/astronaut\ 1.svg);
+}
+
+/* .benefits-item:nth-child(1)::before {
+    background-image: url(../img/Vector.svg);
+} */
 
 .benefits-subtitle {
     font-size: var(--main-font-size);
@@ -354,6 +420,22 @@ margin-right: 50px;
     text-align: center;
     color: var(--second-text-color);
 }
+
+/* .team-icon {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    weight: 44px;
+    background-color: red;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    }
+
+.icon-insta {
+background-image: url(../img/instagram\ 2.svg);
+} */
 
 /* footer */
 
