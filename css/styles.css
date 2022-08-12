@@ -27,6 +27,7 @@
     --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
     --portfolio-project-color: #eeeeee;
     --outline: tomato;
+    --icon-color: #afb1b8;
 
 }
 
@@ -419,6 +420,22 @@ margin-right: 50px;
     line-height: 1.17;
     text-align: center;
     color: var(--second-text-color);
+}
+
+.team-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
 }
 
 /* .team-icon {
