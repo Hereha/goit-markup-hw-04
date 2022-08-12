@@ -205,7 +205,7 @@ ul {
 }
 
 .icon-mail::before {
-    background-image: url(../img/konvert.svg);
+    background-image: url(../img/envelope.svg);
     color: #757575;
     background-position: center;
     background-size: contain;
