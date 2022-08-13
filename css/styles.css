@@ -480,6 +480,15 @@ background-image: url(../img/instagram\ 2.svg);
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
+
+/* .clients-icon {
+    color: var(--icon-color);
+}
+
+.clients-icon:hover,.clients-icon:focus {
+    color: var(--accent-color);
+} */
+
 .clients-list {
     display: flex;
     justify-content: center;
@@ -499,7 +508,7 @@ background-image: url(../img/instagram\ 2.svg);
     fill: currentColor;
 }
 
-.clients-link:hover, .clients-link:focus {
+.clients-link:hover,.clients-link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
