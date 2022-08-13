@@ -530,9 +530,22 @@ background-image: url(../img/instagram\ 2.svg);
     padding: 60px 0;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-adress {
+    margin-right: 70px;
+}
+
 .footer-maps {
     margin-top: 20px;
     font-style: normal;
+}
+
+.footer-logo {
+    display: block;
 }
 
 .footer-link {
@@ -577,6 +590,7 @@ background-image: url(../img/instagram\ 2.svg);
 }
 
 .footer-point {
+    display: block;
     line-height: 1.71;
     font-style: normal;
     color: rgba(255, 255, 255, 1);
@@ -587,17 +601,12 @@ background-image: url(../img/instagram\ 2.svg);
     color: var(--accent-color);
 }
 
-/* .footer-all {
-    display: flex;
-} */
-
 .footer-social {
     margin-left: 70px;
 }
 
 .footer-social-list {
     display: flex;
-    /* justify-content: center; */
     gap: 10px;
 }
 
@@ -630,7 +639,7 @@ background-image: url(../img/instagram\ 2.svg);
     background-color: var(--accent-color);
 }
 
-.footer-social-icon {
+.footer-icon {
     fill: currentColor;
 }
 
