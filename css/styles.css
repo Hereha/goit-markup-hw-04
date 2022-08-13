@@ -194,10 +194,16 @@ ul {
 
 .contact-item {
     margin-left: auto;
-    /* margin-right: auto; */
+    display: flex;
+    justify-content: center;
 }
 
-.contact-item::before {
+.icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* .contact-item::before {
     content: "";
     display: inline-block;
     width: 16px;
@@ -224,7 +230,7 @@ ul {
 }
 .icon-mobile:hover, .icon-mobile:focus {
     color: var(--accent-color);
-}
+} */
 
 .mail, .tel {
     color: var(--contact);
@@ -463,6 +469,40 @@ margin-right: 50px;
 .icon-insta {
 background-image: url(../img/instagram\ 2.svg);
 } */
+
+/* clients */
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.clients-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    color: var(--icon-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover, .clients-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
 
 /* footer */
 
