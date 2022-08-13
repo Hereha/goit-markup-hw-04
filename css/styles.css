@@ -454,6 +454,15 @@ margin-right: 50px;
     color: var(--icon-color);
 }
 
+.team-contacts-link:hover,
+.team-contacts-link:focus {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+}
+
+.team-contacts-icon {
+    fill: currentColor;
+}
 /* .team-icon {
     content: "";
     display: inline-block;
@@ -508,7 +517,8 @@ background-image: url(../img/instagram\ 2.svg);
     fill: currentColor;
 }
 
-.clients-link:hover,.clients-link:focus {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -520,7 +530,7 @@ background-image: url(../img/instagram\ 2.svg);
     padding: 60px 0;
 }
 
-.footer-adress {
+.footer-maps {
     margin-top: 20px;
     font-style: normal;
 }
@@ -569,11 +579,59 @@ background-image: url(../img/instagram\ 2.svg);
 .footer-point {
     line-height: 1.71;
     font-style: normal;
-    color: var(--background-color);
+    color: rgba(255, 255, 255, 1);
+    border-radius: rgba(0, 0, 0, 1);
 }
 
 .footer-point:hover,.footer-point:focus {
     color: var(--accent-color);
+}
+
+/* .footer-all {
+    display: flex;
+} */
+
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social-list {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+.footer-social-title {
+    font-weight: 700;
+    font-size: var(--main-font-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-bottom: 20px;
+    
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--button-color);
+    background-color: var(--contact);
+    /* border: 1px solid var(--icon-color); */
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+    fill: currentColor;
 }
 
 /* portfolio */
