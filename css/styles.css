@@ -203,6 +203,14 @@ ul {
     fill: currentColor;
 }
 
+/* .icon-mail {
+    position: static;
+}
+
+.icon-mobile {
+    position: static;
+} */
+
 /* .contact-item::before {
     content: "";
     display: inline-block;
@@ -331,7 +339,7 @@ margin-right: 50px;
     content: "";
     display: block;
     height: 120px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     background-color: #F5F4FA;
     margin-bottom: 30px;
     border-radius: 4px;
