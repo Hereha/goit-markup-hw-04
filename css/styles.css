@@ -241,6 +241,8 @@ ul {
 } */
 
 .mail, .tel {
+    display: flex;
+    align-items: center;
     color: var(--contact);
     font-weight: 500;
     line-height: 1.14;
@@ -266,13 +268,16 @@ margin-right: 50px;
     background-color: var(--hero-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../img/first-image.svg),
-    linear-gradient( to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4) );
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4) ), url(../img/first-image.svg);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -348,7 +353,7 @@ margin-right: 50px;
 }
 
 .icon-deteil::before {
-    background-image: url(../img/vector.svg);
+    background-image: url(../img/antenna\ 1.svg);
 }
 .icon-clock::before {
     background-image: url(../img/clock.svg);
@@ -444,6 +449,7 @@ margin-right: 50px;
     line-height: 1.17;
     text-align: center;
     color: var(--second-text-color);
+    margin-bottom: 16px;
 }
 
 .team-contacts {
@@ -543,10 +549,6 @@ background-image: url(../img/instagram\ 2.svg);
     align-items: baseline;
 }
 
-.footer-adress {
-    margin-right: 70px;
-}
-
 .footer-maps {
     margin-top: 20px;
     font-style: normal;
@@ -637,7 +639,7 @@ background-image: url(../img/instagram\ 2.svg);
     height: 44px;
     border-radius: 50%;
     color: var(--button-color);
-    background-color: var(--contact);
+    background-color: rgba(0, 0, 0, 0.2);
     /* border: 1px solid var(--icon-color); */
 }
 
@@ -695,6 +697,11 @@ background-image: url(../img/instagram\ 2.svg);
     height: 38px;
     border-radius: 4px;
     border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .portfolio-project {
@@ -710,6 +717,18 @@ background-image: url(../img/instagram\ 2.svg);
     /* display: block; */
 }   
 
+.project-link {
+    display: block;
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-description {
     padding: 20px 24px;
     /* width: 370px; */
@@ -723,6 +742,7 @@ background-image: url(../img/instagram\ 2.svg);
     font-size: 18px;
     line-height: 2;
     margin-bottom: 4px;
+    color: var(--primary-text-color);
 }
 .project-list-text {
     font-size: 16px;
